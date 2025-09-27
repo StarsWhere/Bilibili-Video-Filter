@@ -24,7 +24,7 @@ B站推荐过滤器是一个用户脚本（UserScript），专为 Bilibili（哔
 作者：**StarsWhere**  
 许可证：**MIT**
 
-## 安装指南
+## 安装指南（用户脚本版本）
 
 1. **安装 Tampermonkey**：
    - 在 Chrome/Firefox/Edge 等浏览器中安装 [Tampermonkey 扩展](https://www.tampermonkey.net/)。
@@ -42,6 +42,41 @@ B站推荐过滤器是一个用户脚本（UserScript），专为 Bilibili（哔
    - 访问 Bilibili 首页（`https://www.bilibili.com/`），脚本将立即生效（排除视频播放页面）。
 
 **注意**：脚本匹配规则为 `*://www.bilibili.com/*`，但排除视频页面 `*://www.bilibili.com/video/*`，以避免干扰正常观看。
+
+## 浏览器扩展版本
+
+除了用户脚本版本，本项目还提供浏览器扩展（Manifest V3，兼容 Chrome、Firefox、Edge 等）版本。扩展版本无需 Tampermonkey，直接使用浏览器内置存储（chrome.storage），功能完全一致。
+
+### 安装指南
+
+1. **下载扩展文件**：
+   - 从 [GitHub 仓库](https://github.com/StarsWhere/Bilibili-Video-Filter) 下载 `extension` 文件夹，包含 `manifest.json`、`content.js` 和 `icon.svg`。
+
+2. **Chrome/Edge 安装**：
+   - 打开 `chrome://extensions/`（或 Edge 的类似页面）。
+   - 启用右上角的“开发者模式”。
+   - 点击“加载已解压的扩展程序”，选择 `extension` 文件夹。
+   - 扩展将加载并立即生效。
+
+3. **Firefox 安装**：
+   - 打开 `about:debugging#/runtime/this-firefox`。
+   - 点击“加载临时附加组件”，选择 `extension/manifest.json` 文件。
+   - 扩展加载后生效（临时附加组件需重启浏览器或手动重新加载）。
+
+4. **使用方法**：
+   - 安装完成后，访问 Bilibili 首页（`https://www.bilibili.com/`），扩展自动运行（排除视频播放页面）。
+   - 控制面板、配置和屏蔽功能与用户脚本版本相同。
+   - 更新扩展：替换文件夹内容后，在扩展管理页面点击“重新加载”。
+
+**注意**：
+- 扩展仅需“storage”权限，无需额外授权。
+- 如果扩展未加载，检查控制台错误（F12 > Console）或确保文件夹路径正确。
+- 发布到 Chrome Web Store 或 Firefox Add-ons：可打包为 .crx 或 .xpi 文件，但本仓库提供源代码以便自定义。
+
+### 扩展文件说明
+- **manifest.json**：扩展清单，定义权限、匹配规则和入口文件。
+- **content.js**：核心内容脚本，转换自原 UserScript，替换 GM API 为 chrome.storage。
+- **icon.svg**：扩展图标，支持矢量缩放。
 
 ## 使用方法
 
