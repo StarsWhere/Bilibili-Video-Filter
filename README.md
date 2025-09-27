@@ -3,6 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/StarsWhere/Bilibili-Video-Filter/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/StarsWhere/Bilibili-Video-Filter.svg?style=social&label=Star)](https://github.com/StarsWhere/Bilibili-Video-Filter)
 [![GitHub forks](https://img.shields.io/github/forks/StarsWhere/Bilibili-Video-Filter.svg?style=social&label=Fork)](https://github.com/StarsWhere/Bilibili-Video-Filter)
+[![Greasy Fork](https://img.shields.io/badge/Greasy%20Fork-Install-orange.svg)](https://greasyfork.org/zh-CN/scripts/550819-b站推荐过滤器)
 
 B站推荐过滤器是一个用户脚本（UserScript），专为 Bilibili（哔哩哔哩）首页设计。它可以智能屏蔽广告、特定分类、直播推荐以及自定义关键词，帮助用户获得更干净、个性化的浏览体验。脚本支持自适应持续屏蔽、拖拽控制面板、暗黑模式切换，并修复了屏蔽后页面留白问题，优化了 UI 交互。
 
@@ -30,10 +31,11 @@ B站推荐过滤器是一个用户脚本（UserScript），专为 Bilibili（哔
    - 如果使用其他用户脚本管理器（如 Violentmonkey），也可兼容。
 
 2. **安装脚本**：
-   - 访问 [GitHub 仓库](https://github.com/StarsWhere/Bilibili-Video-Filter)。
-   - 点击 `Bilibili-Video-Filter.js` 文件，浏览器会提示安装脚本。
-   - 或者，从 Tampermonkey 仪表盘点击“从 URL 安装”，输入脚本的 raw URL：  
-     `https://raw.githubusercontent.com/StarsWhere/Bilibili-Video-Filter/main/Bilibili-Video-Filter.js`
+   - **从 Greasy Fork 安装**（推荐）：直接访问 [Greasy Fork 页面](https://greasyfork.org/zh-CN/scripts/550819-b站推荐过滤器)，点击“安装此脚本”按钮。
+   - **从 GitHub 安装**：访问 [GitHub 仓库](https://github.com/StarsWhere/Bilibili-Video-Filter)。
+     - 点击 `Bilibili-Video-Filter.js` 文件，浏览器会提示安装脚本。
+     - 或者，从 Tampermonkey 仪表盘点击“从 URL 安装”，输入脚本的 raw URL：
+       `https://raw.githubusercontent.com/StarsWhere/Bilibili-Video-Filter/main/Bilibili-Video-Filter.js`
 
 3. **启用脚本**：
    - 安装后，Tampermonkey 会自动启用脚本。
