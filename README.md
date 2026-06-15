@@ -1,5 +1,31 @@
 # Bilibili 视频过滤器
 
+<!-- starswhere-docs-overview -->
+
+## 项目概览
+
+**定位**：一个 Bilibili 视频过滤工具，提供用户脚本和浏览器扩展两种形态。
+
+**核心功能**：
+- 按规则过滤 Bilibili 视频内容
+- 提供 Tampermonkey 用户脚本入口
+- 包含浏览器扩展 manifest 与 content 脚本
+- README 包含安装与规则说明
+
+**技术栈**：JavaScript、Userscript、Browser Extension。
+
+**目录与模块**：`Bilibili-Video-Filter.js` 是用户脚本；`extension/` 保存扩展清单和 content 脚本。
+
+**使用方式**：用户脚本可导入 Tampermonkey；扩展版本可按浏览器扩展开发方式加载 `extension/`。
+
+**配置说明**：过滤规则通常在脚本配置或页面设置中维护。
+
+**适用场景**：适合 Bilibili 首页/列表内容过滤、关键词屏蔽和观看体验优化。
+
+**注意事项**：站点 DOM 结构变化会影响过滤效果，需要按 Bilibili 页面更新脚本选择器。
+
+<!-- /starswhere-docs-overview -->
+
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/StarsWhere/Bilibili-Video-Filter/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/StarsWhere/Bilibili-Video-Filter.svg?style=social&label=Star)](https://github.com/StarsWhere/Bilibili-Video-Filter)
 [![GitHub forks](https://img.shields.io/github/forks/StarsWhere/Bilibili-Video-Filter.svg?style=social&label=Fork)](https://github.com/StarsWhere/Bilibili-Video-Filter)
